@@ -1,0 +1,27 @@
+<div class="container">
+  <div style="font-size: 1.25rem; margin-left: -15px; padding-bottom: 10px; font-weight: bold">
+    Users
+  </div>
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Mobile No.</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; index as i">
+          <th scope="row">{{ i+1 }}</th>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.mobileNo }}</td>
+          <td>{{ user.emailId }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
